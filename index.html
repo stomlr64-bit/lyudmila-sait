@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Людмила Стом · сайты, тексты и автоматизации с ИИ</title>
+<meta name="description" content="Превращаю ваши записи, заметки и презентации в посты, статьи, изображения и небольшие сайты с помощью ИИ. Настраиваю простую автоматизацию. Для экспертов и образовательных проектов.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Людмила Стом">
+<meta property="og:title" content="Людмила Стом · сайты, тексты и автоматизации с ИИ">
+<meta property="og:description" content="Из ваших материалов – посты, статьи, изображения и небольшие сайты. Начать можно с одной небольшой задачи.">
+<meta property="og:url" content="https://stomlr64-bit.github.io/lyudmila-sait/">
+<meta property="og:image" content="https://stomlr64-bit.github.io/lyudmila-sait/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%237a3f5e%27/%3E%3Cpath d=%27M10 24V9h3v12h4.5V9h3v12H23v3z%27 fill=%27%23fff6f1%27/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/wixmadefordisplay-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/golostext-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Людмила Стом","jobTitle":"Контент, сайты и автоматизации с помощью ИИ","url":"https://stomlr64-bit.github.io/lyudmila-sait/","image":"https://stomlr64-bit.github.io/lyudmila-sait/assets/og.jpg","sameAs":["https://t.me/ludmilastomneiro"]}
+</script>
+<style>
+  /* ---- тема: тёплая бумага, винный, тёмный коричневый (знак «Л» из личного сайта) ---- */
+  .v-page {
+    --v-canvas: #f8efec; --v-surface: #fffaf8;
+    --v-ink: #3a2a2d; --v-ink-soft: #735d62;
+    --v-accent: #7a3f5e; --v-accent-ink: #fff5f8;
+    --v-font-display: "Wix Madefor Display", "Segoe UI", system-ui, sans-serif;
+    --v-font-text: "Golos Text", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 58 42 45;
+    --v-radius: 10px;
+    --paper: var(--v-surface); --glow: #f1e0dc; --line: color-mix(in srgb, var(--v-ink) 14%, transparent);
+  }
+  .v-page .v-display { font-weight: 700; }
+  .v-page .v-label { font-weight: 500; }
+  .v-page .v-body { line-height: 1.65; }
+
+  /* ---- шапка: знак и одна кнопка ---------------------------------------------------- */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: var(--v-4);
+    padding: .7rem var(--v-gutter); background: color-mix(in srgb, var(--v-canvas) 88%, transparent); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); box-shadow: 0 1px 0 var(--line); }
+  .bar__mark { display: inline-flex; align-items: center; gap: .6em; text-decoration: none; font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-base); white-space: nowrap; min-width: 0; }
+  .bar__mark i { flex: none; width: 2rem; height: 2rem; border-radius: 8px; background: var(--v-accent); color: var(--v-accent-ink); display: grid; place-items: center; font-style: normal; font-size: 1.05rem; }
+  .bar__mark span { overflow: hidden; text-overflow: ellipsis; }
+  .bar .v-btn { padding: .65em 1.15em; font-size: var(--v-t-sm); white-space: nowrap; }
+
+  /* ---- 1 · первый экран: фото слева на свету, оффер справа ------------------------------ */
+  .hero__bg { position: absolute; inset: 0; background: radial-gradient(120% 90% at 78% 40%, var(--glow) 0%, var(--v-canvas) 62%); }
+  .hero__layer { position: absolute; z-index: 1; inset: auto; right: max(var(--v-gutter), 6vw); top: calc(50% - min(39svh, 20rem) + 1.5rem); height: min(78svh, 40rem); width: auto; aspect-ratio: 818 / 1280; }
+  .hero__photo { width: 100%; height: 100%; border-radius: 18px; overflow: hidden; box-shadow: var(--v-e2); }
+  .hero__photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; }
+  .hero__copy { position: absolute; z-index: 3; left: var(--v-gutter); top: 50%; transform: translateY(-50%); width: min(50vw, 44rem); display: flex; flex-direction: column; gap: var(--v-5); }
+  .hero__title { font-size: clamp(2.3rem, 1rem + 3.4vw, 4.6rem); line-height: 1.02; text-wrap: balance; }
+  .hero__lede { max-width: 38ch; color: var(--v-ink); }
+  .hero__cta { margin-top: var(--v-2); display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); }
+  .hero__hint { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 28ch; }
+  @media (max-width: 860px) {
+    .hero__layer { left: var(--v-gutter); right: auto; top: 4.2rem; height: 38svh; width: min(calc(100vw - 2 * var(--v-gutter)), 44svh); aspect-ratio: auto; }
+    .hero__photo img { object-position: 50% 0%; }
+    .hero__copy { left: var(--v-gutter); right: var(--v-gutter); top: calc(4.2rem + 38svh + 1.25rem); transform: none; width: auto; gap: var(--v-3); }
+    .hero__title { font-size: clamp(1.75rem, 1rem + 3.2vw, 2.25rem); line-height: 1.05; }
+    .hero__lede { font-size: var(--v-t-base); }
+    .hero__cta { margin-top: var(--v-1); flex-direction: column; align-items: flex-start; gap: var(--v-3); }
+  }
+
+  /* ---- 2 · услуги: строки с линиями ---------------------------------------------------- */
+  .serv { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 6vw, 6rem); align-items: start; }
+  .serv__head { position: sticky; top: 7rem; display: flex; flex-direction: column; gap: var(--v-4); }
+  .rows { display: flex; flex-direction: column; }
+  .rows li { padding: var(--v-5) 0; border-top: 1px solid var(--line); display: flex; align-items: flex-start; justify-content: space-between; gap: var(--v-5); }
+  .row__txt { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: var(--v-2); }
+  .row__img { flex: none; width: 10rem; height: 10rem; object-fit: cover; border-radius: var(--v-radius); box-shadow: var(--v-e1); }
+  @media (max-width: 860px) { .row__img { width: 5.5rem; height: 5.5rem; } }
+  .rows li:last-child { border-bottom: 1px solid var(--line); }
+  .rows h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-xl); line-height: 1.12; letter-spacing: var(--v-track-tight); }
+  .rows p { color: var(--v-ink-soft); max-width: 52ch; text-wrap: pretty; }
+  .rows .ex { font-size: var(--v-t-sm); color: var(--v-ink); }
+  .note { margin-top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 52ch; }
+  @media (max-width: 860px) { .serv { grid-template-columns: 1fr; } .serv__head { position: static; } }
+
+  .desk { border-radius: 18px; overflow: hidden; box-shadow: var(--v-e2); aspect-ratio: 16 / 9; }
+  .desk img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 860px) { .desk { aspect-ratio: 4 / 3; border-radius: 14px; } }
+
+  /* ---- 3 · как это выглядит: переписка складывается по прокрутке ------------------------- */
+  .talk { position: absolute; inset: 0; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; padding: 5.5rem var(--v-gutter) 3rem; max-width: 76rem; margin-inline: auto; }
+  .talk__head { display: flex; flex-direction: column; gap: var(--v-4); }
+  .chat { display: flex; flex-direction: column; gap: var(--v-4); }
+  .bub { max-width: 30rem; padding: var(--v-4) var(--v-5); border-radius: 16px; background: var(--paper); box-shadow: var(--v-e1); font-size: var(--v-t-base); line-height: 1.5; }
+  .bub b { display: block; margin-bottom: .2em; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; color: var(--v-ink-soft); font-weight: 500; }
+  .bub--you { align-self: flex-end; background: var(--v-accent); color: var(--v-accent-ink); border-bottom-right-radius: 4px; }
+  .bub--you b { color: color-mix(in srgb, var(--v-accent-ink) 75%, transparent); }
+  .bub--me { align-self: flex-start; border-bottom-left-radius: 4px; }
+  .bub--res { align-self: flex-start; background: transparent; box-shadow: inset 0 0 0 1px var(--line); }
+  .talk__tag { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .talk { grid-template-columns: 1fr; align-content: start; gap: var(--v-5); padding-top: 5rem; } }
+
+  /* ---- 4 · работы: лента ---------------------------------------------------------------- */
+  .works__rail { align-items: center; height: 100%; padding: 0 var(--v-gutter); gap: var(--v-6); }
+  .works__intro { flex: none; width: clamp(18rem, 30vw, 26rem); display: flex; flex-direction: column; gap: var(--v-4); }
+  .work { flex: none; width: clamp(18rem, 44vw, 38rem); display: flex; flex-direction: column; gap: var(--v-3); }
+  .work img { width: 100%; height: auto; border-radius: var(--v-radius); box-shadow: var(--v-e1); background: var(--paper); }
+  .work p { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .work p b { color: var(--v-ink); font-weight: 600; }
+  .works__end { flex: none; width: 4vw; }
+  .real { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--v-6); margin-top: var(--v-7); }
+  .real li { border-top: 1px solid var(--line); padding-top: var(--v-4); display: flex; flex-direction: column; gap: var(--v-2); }
+  .real h3 { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); }
+  .real p { color: var(--v-ink-soft); font-size: var(--v-t-sm); }
+  .textlink { display: inline-flex; align-items: center; min-height: 44px; font-weight: 500; }
+  @media (max-width: 860px) {
+    .real { grid-template-columns: 1fr; }
+    .work { width: 78vw; }
+    #raboty [data-v-stage] { scroll-padding-inline: var(--v-gutter); }
+    .works__rail { height: auto; padding: 5.5rem var(--v-gutter) 2.5rem; align-items: flex-start; }
+    .works__intro { width: 72vw; }
+  }
+
+  /* ---- 5 · финал ------------------------------------------------------------------------- */
+  .fin__stage { position: absolute; inset: 0; background: radial-gradient(110% 80% at 50% 38%, var(--glow) 0%, var(--v-canvas) 70%); }
+  .fin__copy { position: absolute; z-index: 3; left: 50%; top: 46%; transform: translate(-50%, -50%); width: min(40rem, calc(100% - 2 * var(--v-gutter))); display: flex; flex-direction: column; align-items: center; text-align: center; gap: var(--v-5); }
+  .fin__copy .v-lede { max-width: 34ch; }
+  .ask { display: flex; flex-direction: column; gap: var(--v-1); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .foot { position: absolute; z-index: 3; left: 0; right: 0; bottom: 0; padding: var(--v-4) var(--v-gutter); display: flex; justify-content: space-between; gap: var(--v-4); flex-wrap: wrap; border-top: 1px solid var(--line); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .fin__copy { top: 44%; } .foot { flex-direction: column; gap: var(--v-1); } }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <div data-v-progress aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true">Л</i><span>Людмила Стом</span></a>
+    <a class="v-btn" href="https://t.me/ludmilastomneiro" target="_blank" rel="noopener">Написать в Telegram</a>
+  </header>
+
+  <main>
+
+    <!-- 1 · ПЕРВЫЙ ЭКРАН: фото на свету и оффер -->
+    <section id="top" data-v-act="pin" data-v-span="1.6" aria-label="Людмила Стом: сайты, тексты и автоматизации с ИИ">
+      <div data-v-stage>
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="v-layer hero__layer" data-v-parallax="-0.25">
+          <figure class="hero__photo">
+            <img src="assets/portrait.webp" srcset="assets/portrait-800.webp 800w, assets/portrait.webp 1200w" sizes="(max-width: 860px) 100vw, 34vw" alt="Людмила Стом" width="1200" height="1878" fetchpriority="high">
+          </figure>
+        </div>
+        <div class="hero__copy" data-v-cue="0 1 0 0" data-v-rise="0">
+          <h1 class="v-display v-display--xl hero__title">Сайты, тексты и автоматизации с ИИ – для экспертов</h1>
+          <p class="v-lede hero__lede">Превращаю ваши записи, заметки и презентации в посты, статьи, изображения и небольшие сайты.</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="https://t.me/ludmilastomneiro" target="_blank" rel="noopener" data-v-magnet="0.2" data-v-rise="0">Написать в Telegram</a>
+            <p class="hero__hint">Начать можно с одной небольшой задачи.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ЧЕМ МОГУ ПОМОЧЬ -->
+    <section class="v-section" id="uslugi" data-v-act="flow" aria-label="Услуги">
+      <div class="v-wrap serv">
+        <div class="serv__head" data-v-in data-v-stagger="70">
+          <h2 class="v-display v-display--lg">Чем могу помочь</h2>
+          <p class="v-body v-soft">Можно заказать одну услугу или сочетание нескольких.</p>
+        </div>
+        <div data-v-in data-v-stagger="70">
+          <ul class="rows">
+            <li><div class="row__txt"><h3>Контент по вашим материалам</h3><p>Посты, статьи и контент-планы по вашим заметкам, записям занятий и презентациям. ИИ помогает подготовить черновик, факты я сверяю с вашими источниками и вычитываю текст вручную.</p></div><img class="row__img" src="assets/s-content-400.webp" srcset="assets/s-content-400.webp 400w, assets/s-content.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
+            <li><div class="row__txt"><h3>Изображения для контента и сайта</h3><p>Обложки, иллюстрации и карточки в едином стиле, созданные с помощью ИИ. Изображения реальных людей делаю только с их согласия.</p></div><img class="row__img" src="assets/s-images-400.webp" srcset="assets/s-images-400.webp 400w, assets/s-images.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
+            <li><div class="row__txt"><h3>Небольшие сайты и лендинги</h3><p>Одностраничный сайт: описание услуг, примеры работ, контакты. Проверяю отображение на телефоне и помогаю с публикацией.</p></div><img class="row__img" src="assets/s-sites-400.webp" srcset="assets/s-sites-400.webp 400w, assets/s-sites.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
+            <li><div class="row__txt"><h3>Автоматизация повторяющихся задач</h3><p>Простые сценарии: данные из таблиц и документов попадают туда, где они нужны, например в Telegram-канал. Начинаем с одного сценария.</p></div><img class="row__img" src="assets/s-auto-400.webp" srcset="assets/s-auto-400.webp 400w, assets/s-auto.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
+          </ul>
+          <p class="note">Не берусь за сложные системы и интернет-магазины, не даю гарантий по продажам и охватам.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="v-section v-section--tight" id="stol" data-v-act="flow" aria-label="Рабочий стол">
+      <div class="v-wrap">
+        <figure class="desk" data-v-reveal="up" data-v-reveal-at="0.05 0.45">
+          <img src="assets/desk-800.webp" srcset="assets/desk-800.webp 800w, assets/desk-1200.webp 1200w, assets/desk.webp 1920w" sizes="(max-width: 860px) 100vw, 76rem" alt="Рабочий стол: ноутбук, чашка кофе, блокнот и телефон" width="1920" height="1080" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 · КАК ЭТО ВЫГЛЯДИТ: переписка складывается по прокрутке -->
+    <section id="rabota" data-v-act="pin" data-v-span="2.2" aria-label="Как проходит работа">
+      <div data-v-stage>
+        <div class="talk">
+          <div class="talk__head">
+            <h2 class="v-display v-display--lg">Как проходит работа</h2>
+            <p class="v-body v-soft">Вы описываете задачу своими словами и присылаете материалы. Я показываю первый вариант, вы отправляете правки, я их вношу.</p>
+            <p class="talk__tag">Иллюстрация, не реальная переписка.</p>
+          </div>
+          <div class="chat">
+            <p class="bub bub--you" data-v-cue="0.02 1 0.12 0"><b>Вы</b>Здравствуйте! У меня есть записи занятий. Нужны посты для канала.</p>
+            <p class="bub bub--me" data-v-cue="0.28 1 0.12 0"><b>Я</b>Здравствуйте! Пришлите записи, подготовлю первый вариант.</p>
+            <p class="bub bub--res" data-v-cue="0.54 1 0.12 0"><b>Дальше</b>Вы смотрите черновик и присылаете правки. Я их вношу и передаю готовое: тексты, изображения, сайт или настроенный сценарий, и объясняю, как ими пользоваться.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · РАБОТЫ: что уже сделано, и учебные работы курса -->
+    <section id="raboty" data-v-act="pan" data-v-span="3" aria-label="Работы">
+      <div data-v-stage>
+        <div class="works__rail" data-v-pan="0.05">
+          <div class="works__intro">
+            <h2 class="v-display v-display--lg">Что уже сделано</h2>
+            <p class="v-body v-soft">Учебные работы курса по созданию сайтов: макеты для разных ниш. Данные в них вымышленные.</p>
+          </div>
+          <figure class="work"><img src="assets/work-barmen-700.webp" srcset="assets/work-barmen-700.webp 700w, assets/work-barmen.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Лендинг барменской школы: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Барменская школа.</b> Учебная работа.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-ii-700.webp" srcset="assets/work-ii-700.webp 700w, assets/work-ii.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт компании по внедрению ИИ: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Внедрение ИИ в бизнес.</b> Учебная работа.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-parikmaher-700.webp" srcset="assets/work-parikmaher-700.webp 700w, assets/work-parikmaher.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт парикмахерской: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Парикмахерская.</b> Учебная работа.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-remont-700.webp" srcset="assets/work-remont-700.webp 700w, assets/work-remont.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт ремонта квартир: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Ремонт квартир.</b> Учебная работа.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-stomatologiya-700.webp" srcset="assets/work-stomatologiya-700.webp 700w, assets/work-stomatologiya.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт стоматологии: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Стоматология.</b> Учебная работа.</p></figcaption></figure>
+          <div class="works__end" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="v-section v-section--tight" id="uzhe" data-v-act="flow" aria-label="Реальные проекты">
+      <div class="v-wrap" data-v-in data-v-stagger="80">
+        <h2 class="v-display v-display--md">Реальные проекты</h2>
+        <ul class="real">
+          <li><h3>Сайт с рецептами</h3><p>«Готовим с Васей по-быстрому»: домашняя книга рецептов с поиском и разделами, опубликована в интернете.</p><a class="textlink" href="https://gotovim-s-vasey.netlify.app/" target="_blank" rel="noopener">Открыть сайт</a></li>
+          <li><h3>Публикация в Telegram из таблицы</h3><p>Новая строка в Google Таблице запускает сценарий в n8n, и пост публикуется в Telegram-канале. Проверено на тестовом канале.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5 · ФИНАЛ -->
+    <section class="fin" id="kontakt" data-v-act="pin" data-v-span="1.3" aria-label="Написать в Telegram">
+      <div data-v-stage>
+        <div class="fin__stage" aria-hidden="true"></div>
+        <div class="fin__copy" data-v-cue="0.04" data-v-rise="0">
+          <h2 class="v-display v-display--lg">Опишите задачу своими словами</h2>
+          <p class="v-lede">Стоимость и сроки обсуждаем после знакомства с материалами.</p>
+          <a class="v-btn" href="https://t.me/ludmilastomneiro" target="_blank" rel="noopener" data-v-magnet="0.2" data-v-rise="0">Написать в Telegram</a>
+          <div class="ask">
+            <span>Что нужно сделать?</span>
+            <span>Для кого это?</span>
+            <span>Какие материалы уже есть: записи, заметки, фото?</span>
+          </div>
+        </div>
+        <footer class="foot">
+          <span>Людмила Стом</span>
+          <span>Контент, сайты и автоматизации с помощью ИИ</span>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  // На телефоне пины короче.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '1.35');
+    document.getElementById('rabota').setAttribute('data-v-span', '1.9');
+    document.getElementById('kontakt').setAttribute('data-v-span', '1.2');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+</script>
+</body>
+</html>
