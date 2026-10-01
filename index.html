@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Людмила Стом · сайты, тексты и автоматизации с ИИ</title>
-<meta name="description" content="Превращаю ваши записи, заметки и презентации в посты, статьи, изображения и небольшие сайты с помощью ИИ. Настраиваю простую автоматизацию. Для экспертов и образовательных проектов.">
+<title>Людмила Стом · сайты, контент и автоматизации с ИИ для экспертов</title>
+<meta name="description" content="Небольшие сайты и лендинги для экспертов с помощью ИИ, контент для экспертов из готовых материалов, простые автоматизации Telegram и рабочих процессов. Начать можно с одной задачи.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Людмила Стом">
-<meta property="og:title" content="Людмила Стом · сайты, тексты и автоматизации с ИИ">
+<meta property="og:title" content="Людмила Стом · сайты, контент и автоматизации с ИИ для экспертов">
 <meta property="og:description" content="Из ваших материалов – посты, статьи, изображения и небольшие сайты. Начать можно с одной небольшой задачи.">
 <meta property="og:url" content="https://stomlr64-bit.github.io/lyudmila-sait/">
 <meta property="og:image" content="https://stomlr64-bit.github.io/lyudmila-sait/assets/og.jpg">
@@ -104,6 +104,8 @@
   .work { flex: none; width: clamp(18rem, 44vw, 38rem); display: flex; flex-direction: column; gap: var(--v-3); }
   .work img { width: 100%; height: auto; border-radius: var(--v-radius); box-shadow: var(--v-e1); background: var(--paper); }
   .work p { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .work p + p { margin-top: var(--v-1); }
+  .real li p b { color: var(--v-ink); font-weight: 600; }
   .work p b { color: var(--v-ink); font-weight: 600; }
   .works__end { flex: none; width: 4vw; }
   .real { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--v-6); margin-top: var(--v-7); }
@@ -118,6 +120,15 @@
     .works__rail { height: auto; padding: 5.5rem var(--v-gutter) 2.5rem; align-items: flex-start; }
     .works__intro { width: 72vw; }
   }
+
+  .faq { max-width: 52rem; display: flex; flex-direction: column; gap: var(--v-6); }
+  .faq__list details { border-top: 1px solid var(--line); }
+  .faq__list details:last-child { border-bottom: 1px solid var(--line); }
+  .faq__list summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: var(--v-4); min-height: 56px; padding: var(--v-3) 0; font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); line-height: 1.25; }
+  .faq__list summary::-webkit-details-marker { display: none; }
+  .faq__list summary::after { content: "+"; flex: none; width: 1.8rem; height: 1.8rem; border-radius: 50%; display: grid; place-items: center; font-weight: 500; font-size: 1.2rem; line-height: 1; color: var(--v-accent); box-shadow: inset 0 0 0 1px var(--line); transition: transform .18s var(--v-ease-out); }
+  .faq__list details[open] summary::after { content: "–"; }
+  .faq__list p { padding: 0 0 var(--v-4); color: var(--v-ink-soft); max-width: 60ch; text-wrap: pretty; }
 
   /* ---- 5 · финал ------------------------------------------------------------------------- */
   .fin__stage { position: absolute; inset: 0; background: radial-gradient(110% 80% at 50% 38%, var(--glow) 0%, var(--v-canvas) 70%); }
@@ -140,7 +151,7 @@
   <main>
 
     <!-- 1 · ПЕРВЫЙ ЭКРАН: фото на свету и оффер -->
-    <section id="top" data-v-act="pin" data-v-span="1.6" aria-label="Людмила Стом: сайты, тексты и автоматизации с ИИ">
+    <section id="top" data-v-act="pin" data-v-span="1.6" aria-label="Людмила Стом: сайты, контент и автоматизации с ИИ для экспертов">
       <div data-v-stage>
         <div class="hero__bg" aria-hidden="true"></div>
         <div class="v-layer hero__layer" data-v-parallax="-0.25">
@@ -149,12 +160,10 @@
           </figure>
         </div>
         <div class="hero__copy" data-v-cue="0 1 0 0" data-v-rise="0">
-          <h1 class="v-display v-display--xl hero__title">Сайты, тексты и автоматизации с ИИ – для экспертов</h1>
-          <p class="v-lede hero__lede">Превращаю ваши записи, заметки и презентации в посты, статьи, изображения и небольшие сайты.</p>
+          <h1 class="v-display v-display--xl hero__title">Сайты, контент и простые автоматизации с ИИ для экспертов</h1>
+          <p class="v-lede hero__lede">Из ваших записей, заметок и презентаций собираю готовые посты, статьи, изображения и небольшие сайты. Можно начать с одной задачи.</p>
           <div class="hero__cta">
-            <a class="v-btn" href="https://t.me/ludmilastomneiro" target="_blank" rel="noopener" data-v-magnet="0.2" data-v-rise="0">Написать в Telegram</a>
-            <p class="hero__hint">Начать можно с одной небольшой задачи.</p>
-          </div>
+            <a class="v-btn" href="https://t.me/ludmilastomneiro" target="_blank" rel="noopener" data-v-magnet="0.2" data-v-rise="0">Написать в Telegram</a>          </div>
         </div>
       </div>
     </section>
@@ -164,11 +173,11 @@
       <div class="v-wrap serv">
         <div class="serv__head" data-v-in data-v-stagger="70">
           <h2 class="v-display v-display--lg">Чем могу помочь</h2>
-          <p class="v-body v-soft">Можно заказать одну услугу или сочетание нескольких.</p>
+          <p class="v-body v-soft">Небольшие сайты и лендинги для экспертов с помощью ИИ, контент из готовых материалов, простые автоматизации Telegram и рабочих процессов. Можно заказать одну услугу или сочетание нескольких.</p>
         </div>
         <div data-v-in data-v-stagger="70">
           <ul class="rows">
-            <li><div class="row__txt"><h3>Контент по вашим материалам</h3><p>Посты, статьи и контент-планы по вашим заметкам, записям занятий и презентациям. ИИ помогает подготовить черновик, факты я сверяю с вашими источниками и вычитываю текст вручную.</p></div><img class="row__img" src="assets/s-content-400.webp" srcset="assets/s-content-400.webp 400w, assets/s-content.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
+            <li><div class="row__txt"><h3>Контент по вашим материалам</h3><p>Посты, статьи и контент-планы по вашим заметкам, записям занятий и презентациям. Использую ИИ как рабочий инструмент, а итоговый текст проверяю, редактирую и сверяю с вашими материалами.</p></div><img class="row__img" src="assets/s-content-400.webp" srcset="assets/s-content-400.webp 400w, assets/s-content.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
             <li><div class="row__txt"><h3>Изображения для контента и сайта</h3><p>Обложки, иллюстрации и карточки в едином стиле, созданные с помощью ИИ. Изображения реальных людей делаю только с их согласия.</p></div><img class="row__img" src="assets/s-images-400.webp" srcset="assets/s-images-400.webp 400w, assets/s-images.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
             <li><div class="row__txt"><h3>Небольшие сайты и лендинги</h3><p>Одностраничный сайт: описание услуг, примеры работ, контакты. Проверяю отображение на телефоне и помогаю с публикацией.</p></div><img class="row__img" src="assets/s-sites-400.webp" srcset="assets/s-sites-400.webp 400w, assets/s-sites.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
             <li><div class="row__txt"><h3>Автоматизация повторяющихся задач</h3><p>Простые сценарии: данные из таблиц и документов попадают туда, где они нужны, например в Telegram-канал. Начинаем с одного сценария.</p></div><img class="row__img" src="assets/s-auto-400.webp" srcset="assets/s-auto-400.webp 400w, assets/s-auto.webp 800w" sizes="(max-width: 860px) 5.5rem, 10rem" alt="" width="400" height="400" loading="lazy" decoding="async"></li>
@@ -212,11 +221,11 @@
             <h2 class="v-display v-display--lg">Что уже сделано</h2>
             <p class="v-body v-soft">Учебные работы курса по созданию сайтов: макеты для разных ниш. Данные в них вымышленные.</p>
           </div>
-          <figure class="work"><img src="assets/work-barmen-700.webp" srcset="assets/work-barmen-700.webp 700w, assets/work-barmen.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Лендинг барменской школы: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Барменская школа.</b> Учебная работа.</p></figcaption></figure>
-          <figure class="work"><img src="assets/work-ii-700.webp" srcset="assets/work-ii-700.webp 700w, assets/work-ii.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт компании по внедрению ИИ: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Внедрение ИИ в бизнес.</b> Учебная работа.</p></figcaption></figure>
-          <figure class="work"><img src="assets/work-parikmaher-700.webp" srcset="assets/work-parikmaher-700.webp 700w, assets/work-parikmaher.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт парикмахерской: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Парикмахерская.</b> Учебная работа.</p></figcaption></figure>
-          <figure class="work"><img src="assets/work-remont-700.webp" srcset="assets/work-remont-700.webp 700w, assets/work-remont.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт ремонта квартир: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Ремонт квартир.</b> Учебная работа.</p></figcaption></figure>
-          <figure class="work"><img src="assets/work-stomatologiya-700.webp" srcset="assets/work-stomatologiya-700.webp 700w, assets/work-stomatologiya.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт стоматологии: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Стоматология.</b> Учебная работа.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-barmen-700.webp" srcset="assets/work-barmen-700.webp 700w, assets/work-barmen.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Лендинг барменской школы: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Барменская школа</b> · учебная работа</p><p><b>Задача:</b> Лендинг барменской школы.</p><p><b>Сделано:</b> программа по этапам в виде тетради, цены и расписание, запись в Telegram, адаптация под телефон.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-ii-700.webp" srcset="assets/work-ii-700.webp 700w, assets/work-ii.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт компании по внедрению ИИ: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Внедрение ИИ в бизнес</b> · учебная работа</p><p><b>Задача:</b> Одностраничный сайт компании по внедрению ИИ.</p><p><b>Сделано:</b> структура, тексты, визуальное оформление, адаптация под телефон.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-parikmaher-700.webp" srcset="assets/work-parikmaher-700.webp 700w, assets/work-parikmaher.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт парикмахерской: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Парикмахерская</b> · учебная работа</p><p><b>Задача:</b> Одностраничный сайт парикмахерской с записью к мастеру.</p><p><b>Сделано:</b> структура, тексты, визуальное оформление, адаптация под телефон.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-remont-700.webp" srcset="assets/work-remont-700.webp 700w, assets/work-remont.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт ремонта квартир: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Ремонт квартир</b> · учебная работа</p><p><b>Задача:</b> Одностраничный сайт компании по ремонту квартир.</p><p><b>Сделано:</b> структура, тексты, визуальное оформление, адаптация под телефон.</p></figcaption></figure>
+          <figure class="work"><img src="assets/work-stomatologiya-700.webp" srcset="assets/work-stomatologiya-700.webp 700w, assets/work-stomatologiya.webp 1200w" sizes="(max-width: 860px) 78vw, 44vw" alt="Сайт стоматологии: ноутбук и телефон" width="1200" height="800" loading="lazy" decoding="async"><figcaption><p><b>Стоматология</b> · учебная работа</p><p><b>Задача:</b> Одностраничный сайт для клиники.</p><p><b>Сделано:</b> структура, тексты, визуальное оформление, адаптация под телефон.</p></figcaption></figure>
           <div class="works__end" aria-hidden="true"></div>
         </div>
       </div>
@@ -226,9 +235,23 @@
       <div class="v-wrap" data-v-in data-v-stagger="80">
         <h2 class="v-display v-display--md">Реальные проекты</h2>
         <ul class="real">
-          <li><h3>Сайт с рецептами</h3><p>«Готовим с Васей по-быстрому»: домашняя книга рецептов с поиском и разделами, опубликована в интернете.</p><a class="textlink" href="https://gotovim-s-vasey.netlify.app/" target="_blank" rel="noopener">Открыть сайт</a></li>
-          <li><h3>Публикация в Telegram из таблицы</h3><p>Новая строка в Google Таблице запускает сценарий в n8n, и пост публикуется в Telegram-канале. Проверено на тестовом канале.</p></li>
+          <li><h3>Сайт с рецептами</h3><p>«Готовим с Васей по-быстрому».</p><p><b>Задача:</b> собрать удобную домашнюю книгу рецептов.</p><p><b>Сделано:</b> структура, карточки рецептов, поиск, разделы и публикация сайта.</p><a class="textlink" href="https://gotovim-s-vasey.netlify.app/" target="_blank" rel="noopener">Открыть сайт</a></li>
+          <li><h3>Публикация в Telegram из таблицы</h3><p><b>Задача:</b> публиковать посты в Telegram-канале из Google Таблицы.</p><p><b>Сделано:</b> сценарий в n8n: новая строка в таблице запускает публикацию поста. Проверено на тестовом канале.</p></li>
         </ul>
+      </div>
+    </section>
+
+    <!-- FAQ: частые вопросы -->
+    <section class="v-section v-section--tight" id="faq" data-v-act="flow" aria-label="Частые вопросы">
+      <div class="v-wrap faq" data-v-in data-v-stagger="70">
+        <h2 class="v-display v-display--md">Частые вопросы</h2>
+        <div class="faq__list">
+          <details><summary>Можно ли прийти без технического задания?</summary><p>Да. Опишите задачу своими словами и пришлите то, что уже есть: записи, заметки, презентации. Остальное уточним в переписке.</p></details>
+          <details><summary>Что нужно прислать для начала?</summary><p>Три вещи: что нужно сделать, для кого это и какие материалы уже есть (записи, заметки, фото).</p></details>
+          <details><summary>Можно ли заказать только одну услугу?</summary><p>Да. Можно заказать одну услугу или сочетание нескольких, а начать с одной небольшой задачи.</p></details>
+          <details><summary>Сколько правок входит?</summary><p>Я показываю первый вариант, вы присылаете правки одним сообщением, я их вношу. Количество кругов правок согласуем до начала работы.</p></details>
+          <details><summary>Как определяется стоимость?</summary><p>Стоимость и сроки обсуждаем после знакомства с материалами: так виден объём работы.</p></details>
+        </div>
       </div>
     </section>
 
